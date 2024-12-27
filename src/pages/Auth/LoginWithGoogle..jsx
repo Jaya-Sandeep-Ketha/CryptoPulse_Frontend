@@ -6,7 +6,7 @@ const LoginWithGoogle = () => {
 
   const handleGoogleLogin = async () => {
     try {
-      const response = await fetch('http://localhost:5454/login/google');
+      const response = await fetch('https://cryptopulse-app.onrender.com:5454/login/google');
       const data = await response.json();
       // Check if token exists in response
       if (data.token) {
